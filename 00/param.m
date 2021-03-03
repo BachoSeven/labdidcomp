@@ -30,3 +30,12 @@
 	end
 	figure(3)
 	imagesc(M)
+
+# 3 alt
+	v=-5:.01:5;
+	[x,y]=meshgrid(v);
+	z =((x-1).^2+y.^2-4).*((x+1).^2+y.^2-4).*(x.^2+(y-sqrt(3)).^2-4)<1;
+	z=double(z);
+	z(z==0)=NaN;
+	figure(3)
+	plot3(x,y,z,'p')
