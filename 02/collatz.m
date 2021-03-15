@@ -1,4 +1,4 @@
-function a=coll(n)
+function a=collatz(n)
 	a(1)=n;
 	i=1;
 	while(a(i)!=1)

@@ -6,8 +6,8 @@ function rfibplot(n)
 	for i=1:n
 		y2(i)=c^i;
 	end
-	f=abs(rfibonacci(n));
-	semilogy(f)
+	rf=abs(rfibonacci(n));
+	semilogy(rf)
 	hold on
 	semilogy(y2)
 end

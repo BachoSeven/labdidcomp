@@ -1,10 +1,10 @@
 function r=rapporto_successione(m)
+	# Chiamo la procedure per generare i primi m termini della successione
 	g=successione(m);
-	for k=2:m
-		G(k-1)=g(k)/g(k-1);
-	end
 	format long
-	r=G(end);
+	# Determino r (viene stampato in quanto output dello script)
+	r=g(m)-g(m-1);
+
 	# Plot per confrontare gli andamenti di g_n e p^n
 	for i=1:m
 		y1(i)=r^i;

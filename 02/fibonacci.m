@@ -1,4 +1,4 @@
-function f=fibo(m)
+function f=fibonacci(m)
 	# Vettore contenente i primi m elementi
 	f(1:2)=1;
 	for i=3:m

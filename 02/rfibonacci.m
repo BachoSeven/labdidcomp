@@ -1,9 +1,9 @@
-function f=rfibonacci(m)
+function rf=rfibonacci(m)
 	# Vettore dei primi m elementi
-	f(1:2)=1;
+	rf(1:2)=1;
 	a=[1 -1];
 	for i=3:m
 		p=a(randi(2));
-		f(i)=f(i-1)+p*f(i-2);
+		rf(i)=rf(i-1)+p*rf(i-2);
 	end
 end
