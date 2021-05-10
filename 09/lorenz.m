@@ -17,7 +17,7 @@ function lorenz
 	# t rappresenta il tempo
 	F=@(t,x) [s*(x(2)-x(1));r*x(1)-x(2)-x(1)*x(3);x(1)*x(2)-b*x(3)];
 
-	# per t_max=17.57(non 56), la seconda chiamata a ode45 decide di dividere l'intervallo in un numero inferiore(di uno) rispetto alla prima chiamata.
+	# Quirk: per t_max=17.57(non 56), la seconda chiamata a ode45(ma anche usando ode23) decide di dividere l'intervallo in un numero inferiore(di uno) rispetto alla prima chiamata(cambiano solo le condizioni iniziali...).
 	tmax=200;
 	[t1,x1]=ode45(F,[0,tmax],c1);
 	[t2,x2]=ode45(F,[0,tmax],c2);
