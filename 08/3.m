@@ -1,9 +1,9 @@
 f=@(x) exp(x);
-% f=@(x) cos(x);
+# f=@(x) cos(x);
 N=100:100:1000;
 for i=100:100:1000
 	Y(i/100)=abs((e-1)-simpson(f,0,1,i));
-	% Y(i/100)=abs((sin(1)-(sin(0)))-simpson(f,0,1,i));
+	# Y(i/100)=abs((sin(1)-(sin(0)))-simpson(f,0,1,i));
 end
 ly=log(Y);
 ln=log(N);
