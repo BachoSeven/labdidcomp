@@ -1,6 +1,6 @@
 function tgol(k,X,N)
   for i=1:k
-    spy(X,'o')
+    spy(X,'s','r')
 
 		# Direzioni Cardinali
     L=[X(:,2:N),zeros(N,1)];
