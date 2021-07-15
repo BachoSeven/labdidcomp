@@ -9,6 +9,7 @@
 
 # Plot dei frattali
 	axis equal
-	fract(S,100000);
+	# fract(S,100000);
 	figure(2)
 	fract(K,100000);
+	pause(10)

@@ -10,3 +10,4 @@ z=V.*sin(U/2);
 axis equal
 mesh(x,y,z)
 axis off
+pause(10)

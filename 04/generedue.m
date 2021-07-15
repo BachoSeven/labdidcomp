@@ -8,3 +8,4 @@ F=(X.*((X-1).^2).*(X-2)+Y.^2).^2 + Z.^2;
 
 colormap spring
 isosurface(X,Y,Z,F,0.03,X)
+pause(10)

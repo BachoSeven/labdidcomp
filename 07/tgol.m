@@ -18,6 +18,7 @@ function tgol(k,X,N)
 
     X=Y==3|(Y==2&X==1);
 
+		pause(1)
     drawnow
   end
 end
